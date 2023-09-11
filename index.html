@@ -9,7 +9,7 @@
         <li><a href="index.html"> Главная страница </a></li>
         <li><a href="#picture"> Ссылка на картинку текущей страницы </a></li>
         <li><a href="http://myfunnybooks.ru/catalog_of_books.html/?science_fiction=true&country=usa&count_of_books=10"> Ссылка на сайт с 3-мя параметрами URL </a></li>
-        <li><a href="index.html#picture">Ссылка на картинку с параметром id</a></li>
+        <li><a href="http://ozon.ru/?id=474892_947">Ссылка на картинку с параметром id</a></li>
         <li><a href="./example.html">Относительная ссылка на страницу в текущем каталоге</a></li>
         <li><a href="./about/the_thing.html">Относительная ссылка на страницу в каталоге about</a></li>
         <li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
@@ -21,5 +21,22 @@
             <area shape="rect" coords="0, 0, 100, 100" href="notcat.html">
         </map>
         <li><img src="images/cat.jpg" usemap="#range" alt="very_bad.html"></li>
+        <li><a href="">Ссылка с пустым атрибутом href</a></li>
+        <li><a>Ссылка с отсутсвующим атрибутом href</a></li>
+        <li><a href="./about/the_thing.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><!-- noindex -->Текст, индексирование которого необходимо убрать<!-- /noindex --></li>
+        
     </ol>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> -->

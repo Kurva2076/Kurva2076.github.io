@@ -6,7 +6,7 @@
         <title>Document</title>
     </head>
     <body>
-        <h1>1</h1>
+        <h1>Маркированный список гиперссылок</h1>
         <map name="range">
             <area shape="circle" coords="420,240,200" href="cat.html" alt="...">
             <area shape="rect" coords="0,0,100,100" href="notcat.html" alt="...">
@@ -38,7 +38,70 @@
                 <li><a href="bookinghotel.html" title="Бронирование номеров с самыми низкими ценами">Ссылка на бронирование номеров</a></li>
                 <li><a href="musify.html" title="Самая большая библиотека музыки">Ссылка на музыкальную библиотеку</a></li>
             </ol></li>
-            <li><a></a></li>
+            <li><a href="ftp://username:qwerty1234@films.com/catalog/terminator.html">Ссылка на файл, загруженный на FTP-сервер</a></li>
         </ol>
+        <h1>Форма</h1>
+        <form action="/" method="post">
+            <label>
+                <p>
+                    ФИО:<br>
+                    <input name="field-full-name" placeholder="Введите своё ФИО" size="30">
+                </p>
+            </label>
+            <label>
+                <p>
+                    Телефон:<br>
+                    <input name="field-phone-number" placeholder="Введите свой номер телефона" size="30">
+                </p>
+            </label>
+            <label>
+                <p>
+                    E-mail:<br>
+                    <input name="field-email" placeholder="Введите свой e-mail" size="30">
+                </p>
+            </label>
+            <label>
+                <p>
+                    Дата рождения:<br>
+                    <input name="field-date" type="date">
+                </p>
+            </label>
+            <p>
+                Пол:<br>
+                <label>
+                    <input type="radio" name="field-gender" value="male">Мужской
+                </label>
+                <label>
+                    <input type="radio" name="field-gender" value="female">Женский
+                </label>
+            </p>
+            <label>
+                <p>
+                    Список любимых языков программирования:<br>
+                    <select name="field-pl-list" multiple="multiple" size="5">
+                        <option value="Python" selected="selected">Python</option>
+                        <option value="C">C</option>
+                        <option value="C++" selected="selected">C++</option>
+                        <option value="C#">C#</option>
+                        <option value="JavaScript" selected="selected">JavaScript</option>
+                        <option value="Java" selected="selected">Java</option>
+                        <option value="Pascal">Pascal</option>
+                        <option value="PHP">PHP</option>
+                    </select>
+                </p>
+            </label>
+            <label>
+                <p>
+                    Биография:<br>
+                    <textarea name="field-biography" placeholder="Расскажите о себе"></textarea>
+                </p>
+            </label>
+            <label>
+                <p>
+                    <input type="checkbox" name="field-check">С контрактом ознакомлен(а)
+                </p>
+            </label>
+            <p><input type="submit" value="Сохранить"></p>
+        </form>
     </body>
 </html>

@@ -9,9 +9,22 @@ header{
     background-color: #5ed931;
 }
 
+.table{
+    width: 300px;
+    height: 300px;
+}
+
 #logotype{
     float: left;
     margin: 10px;
     width: 100px;
     height: 100px;
+}
+
+.odd-row{
+    background-color: khaki;
+}
+
+.even-row{
+    background-color: plum;
 }

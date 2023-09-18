@@ -5,19 +5,25 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <title>Задание 2</title>
     </head>
 
     <body>
 
-        <h1>Маркированный список гиперссылок</h1>
+        <header>
+            <h1>Задание 2</h1>
+            <img id="logotype" scr="images/pushincat.png" alt="..."/>
+        </header>
+
+        <h2>Маркированный список гиперссылок</h2>
 
         <map name="range">
             <area shape="circle" coords="420,240,200" href="cat.html" alt="..." />
             <area shape="rect" coords="0,0,100,100" href="notcat.html" alt="..." />
         </map>
 
-        <ul>
+        <ul id="list">
             <li><a href="http://kubsu.ru/">КубГУ</a></li>
             <li><a href="https://kubsu.ru/">КубГУ</a></li>
             <li><a id="picture" href="Ссылка"><img src="images/image.jpg"
@@ -66,18 +72,18 @@
                 Ссылка на файл, загруженный на FTP-сервер</a></li>
         </ul>
 
-        <h1>Таблица</h1>
+        <h2>Таблица</h2>
 
-        <table border="1" cols="31" width="1500" height="1000">
+        <table id="" border="1" cols="31" width="1500" height="1000">
 
-            <tr bgcolor="fuchsia">
+            <tr>
                 <th rowspan="4">№</th>
                 <th colspan="3" rowspan="4">ФИО</th>
                 <th colspan="24">Месяцы</th>
                 <th colspan="3">Выводы</th>
             </tr>
 
-            <tr bgcolor="blue">
+            <tr>
                 <th colspan="6">Зимние</th>
                 <th colspan="6">Весенние</th>
                 <th colspan="6">Летние</th>
@@ -88,7 +94,7 @@
                     финансовой грамотности</th>
             </tr>
 
-            <tr bgcolor="green">
+            <tr>
                 <th colspan="2">Декабрь</th>
                 <th colspan="2">Январь</th>
                 <th colspan="2">Февраль</th>
@@ -130,7 +136,7 @@
                 <th>Расходы</th>
             </tr>
 
-            <tr bgcolor="green">
+            <tr>
                 <td>1</td>
                 <td colspan="3">Егорова Эмилия Денисовна</td>
                 <td>101347</td>
@@ -194,7 +200,7 @@
                 <td>Нет</td>
             </tr>
 
-            <tr bgcolor="green">
+            <tr>
                 <td>3</td>
                 <td colspan="3">Феодосьева Ольга Тимофеевна</td>
                 <td>126920</td>
@@ -258,7 +264,7 @@
                 <td>ОБЯЗАТЕЛЬНО</td>
             </tr>
 
-            <tr bgcolor="green">
+            <tr>
                 <td>5</td>
                 <td colspan="3">Черных Софья Георгиевна</td>
                 <td>120965</td>
@@ -292,7 +298,7 @@
 
         </table>
 
-        <h1>Форма</h1>
+        <h2>Форма</h2>
 
         <form action="/" method="post">
 

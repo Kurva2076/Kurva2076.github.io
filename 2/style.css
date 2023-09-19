@@ -1,9 +1,23 @@
+body{
+    background-color: bisque;
+    margin: 0;
+}
+
 header{
     margin: 0;
     width: 100%;
     height: 110px;
     display: block;
-    background-color: #5ed931;
+    padding: 10px;
+    background-color: palegreen;
+}
+
+#logotype{
+    float: left;
+    margin: 5px;
+    width: 125px;
+    height: 100px;
+    background-color: powderblue;
 }
 
 h1{
@@ -11,21 +25,39 @@ h1{
     padding: 20px;
 }
 
-#logotype{
-    float: left;
-    margin: 5px;
-    width: 100px;
-    height: 100px;
-    background-color: powderblue;
-}
-
 nav{
+    background-color: lightsalmon;
+    height: 50%;
+    width: 50%;
     float: right;
+    margin: 10px;
+    padding: 1%;
 }
 
-.table{
-    width: 300px;
+nav a{
+    font-size: 120%;
+    margin: 5%;
+    color: indigo;
+}
+
+.start,
+.list,
+.chart,
+.shape{
+    max-width: 900px;
+    background-color: ivory;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.start{
+    margin-top: 20px;
+}
+
+.chart{
+    width: 100%;
     height: 600px;
+    padding: 50px;
 }
 
 .odd-row{
@@ -38,5 +70,7 @@ nav{
 
 footer{
     width: 100%;
+    padding: 10px;
+    margin-top: 20px;
     background-color: aqua;
 }

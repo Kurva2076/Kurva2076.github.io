@@ -56,7 +56,7 @@ nav a{
 
 .start,
 .start-table{
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .start-table{
@@ -76,6 +76,6 @@ nav a{
 footer{
     width: 100%;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 5%;
     background-color: aqua;
 }

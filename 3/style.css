@@ -33,6 +33,7 @@ header{
 .navigation{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: lightsalmon;
     height: 200px;
     width: 100%;
@@ -49,19 +50,12 @@ header{
 and (max-width: 5120px) and (max-height: 2880px){
 
     header{
-        margin: 0;
-        width: 100%;
-        height: 110px;
         display: block;
-        padding: 10px;
-        background-color: palegreen;
+        height: 110px;
     }
     
     #logotype{
-        float: left;
-        margin: 5px;
         width: 125px;
-        height: 100px;
     }
     
     .name{
@@ -74,83 +68,143 @@ and (max-width: 5120px) and (max-height: 2880px){
     
     .navigation{
         display: block;
-        background-color: lightsalmon;
         height: 50%;
         width: 55%;
         min-width: 500px;
         max-width: 600px;
         float: right;
-        margin: 10px;
+        margin: 0px 0px 10px 10px;
         padding: 1%;
     }
     
     .navigation a{
-        font-size: 170%;
         margin: 2%;
-        color: indigo;
     }
 
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
 }
 
 .start-list,
 .start-table,
 .start-shape{
-    /* display: flex; */
-    max-width: 900px;
+    width: 100%;
     background-color: ivory;
     margin: 0 auto;
-    padding: 30px;
+    margin-top: 5%;
+}
+
+.start-list{
+    order: 2;
+}
+
+.start-table{
+    order: 1;
+    padding-bottom: 20px;
+}
+
+.start-shape{
+    order: 3;
 }
 
 @media screen and (orientation: landscape) and (min-width: 320px) and (min-height: 240px)
 and (max-width: 5120px) and (max-height: 2880px){
 
+    .content{
+        display: block;
+    }
+
     .start-list,
     .start-table,
     .start-shape{
-        display: block;
         max-width: 900px;
-        background-color: ivory;
-        margin: 0 auto;
         padding: 30px;
+    }
+
+    .start-list,
+    .start-shape{
+        border-radius: 100px;
+    }
+
+    .start-table{
+        border-radius: 20px;
     }
 
 }
 
+.start-list h2,
+.start-table h2,
+.start-shape{
+    padding-left: 40px;
+}
 
+@media screen and (orientation: landscape) and (min-width: 320px) and (min-height: 240px)
+and (max-width: 5120px) and (max-height: 2880px){
 
-.image,
-#picture{
+    .start-table h2{
+        padding-left: 0;
+    }
+
+}
+
+.image{
     max-width: 100%;
     max-height: 500px;
 }
 
 .table{
-    font-size: 45%;
+    font-size: 40%;
     width: 100%;
-    height: 100px;
 }
 
-.start-list,
-.start-table,
-.start-shape{
-    margin-top: 5%;
-}
+@media screen and (min-width: 480px){
+    
+    .table{
+        font-size: 45%;
+    }
 
-.start-table{
-    height: 100%;
-    padding: 30px;
-    /* order: -1; */
+    @media screen and (min-width: 540px){
+    
+        .table{
+            font-size: 50%;
+        }
+
+        @media screen and (min-width: 600px){
+    
+            .table{
+                font-size: 55%;
+            }
+        
+            @media screen and (min-width: 660px){
+    
+                .table{
+                    font-size: 60%;
+                }
+            
+                @media screen and (min-width: 720px){
+    
+                    .table{
+                        font-size: 60%;
+                    }
+                
+                }
+
+            }
+
+        }
+    
+    }
+
 }
 
 @media screen and (orientation: landscape) and (min-width: 320px) and (min-height: 240px)
 and (max-width: 5120px) and (max-height: 2880px){
 
-    .start-table{
-        width: 100%;
-        height: 500px;
-        padding: 30px;
-        /* order: 0; */
+    .table{
+        font-size: 100%;
     }
 
 }
@@ -171,56 +225,3 @@ footer{
     margin-top: 5%;
     background-color: aqua;
 }
-
-/* @media (min-width: 1024px) {
-    a {
-        font-size: 25px;
-    }
-
-}
-
-@media (min-width: 976px)
-{
-    .navigation-link {
-        flex-direction: row;
-        margin-top: 0;
-    }
-    .name
-    {
-        margin: 0;
-    }
-    .start-table{
-        order: 0;
-        margin: 20px;
-    }
-}
-
-@media (min-width: 976px) {
-    .header .case {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-}
-
-@media (min-width: 976px) {
-
-    .name {
-        font-size: 32px;
-        margin: 0;
-    }
-
-
-    @media (min-width: 389px) {
-        .navigation-link {
-            flex-direction: row;
-            margin-top: 0;
-        }
-
-        .name
-        {
-            margin: 0;
-        }
-
-    }
-} */

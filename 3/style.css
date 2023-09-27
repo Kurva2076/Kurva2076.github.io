@@ -136,8 +136,7 @@ and (max-width: 5120px) and (max-height: 2880px){
 }
 
 .start-list h2,
-.start-table h2,
-.start-shape{
+.start-table h2{
     padding-left: 40px;
 }
 

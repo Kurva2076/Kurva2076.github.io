@@ -1,0 +1,48 @@
+body{
+    background-color: bisque;
+}
+
+header{
+    padding: 0px;
+    background-color: palegreen;
+}
+
+#logotype{
+    max-width: 140px;
+    min-width: 100px;
+    height: 100px;
+}
+
+.navigation{
+    background-color: lightsalmon;
+}
+
+.nav-link{
+    font-size: 170%;
+    color: indigo;
+}
+
+.container{
+    max-width: 100%;
+}
+
+.start-list,
+.start-table,
+.start-shape{
+    width: 100%;
+    background-color: ivory;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.odd-row{
+    background-color: khaki;
+}
+
+.even-row{
+    background-color: plum;
+}
+
+footer{
+    background-color: aqua;
+}

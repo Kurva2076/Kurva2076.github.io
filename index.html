@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="bootstrap.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Задание 4</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+
+                    <div class="col-12 col-sm-4 col-md-5 col-lg-6">
+                        <div class="navbar-brand row">
+                            <img id="logotype" class="img-fluid col float-start" src="images/logo.png" alt="Логотип" />
+                            <h1 class="name col">Задание 4</h1> 
+                        </div>
+                    </div>
+
+                    <nav class="navigation col-12 col-sm-8 col-md-7 col-lg-6">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a class="nav-link" href="/menu/">Меню</a>
+                            <a class="nav-link" href="/what.html">Ссылка куда-то</a>
+                            <a class="nav-link" href="/sponsors.html">Наши спонсоры</a>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+
+        <main class="container p-0">
+
+            <div class="start-list">
+
+                <h2>Маркированный список гиперссылок</h2>
+
+                <ul class="list">
+                    <li><a href="http://kubsu.ru/">КубГУ</a></li>
+                    <li><a href="https://kubsu.ru/">КубГУ</a></li>
+                    <li><a id="picture" href="Ссылка"><img class="img-fluid" src="images/image.jpg"
+                        alt="..." style="width: 700px; height: 600px"></a></li>
+                    <li><a href="/">Внутреняя страница</a></li>
+                    <li><a href="index.html">Главная страница</a></li>
+                    <li><a href="#picture">Ссылка на картинку текущей страницы</a></li>
+                    <li><a href="http://myfunnybooks.ru/catalog_of_books.html/?science_fiction=true&country=usa&count_of_books=10">
+                        Ссылка на сайт с 3-мя параметрами URL </a></li>
+                    <li><a href="http://ozon.ru/?id=474892_947">
+                        Ссылка на картинку с параметром id</a></li>
+                    <li><a href="./example.html">
+                        Относительная ссылка на страницу в текущем каталоге</a></li>
+                    <li><a href="./about/the_thing.html">
+                        Относительная ссылка на страницу в каталоге about</a></li>
+                    <li><a href="../index.html">Относительная ссылка на страницу 
+                        в каталоге уровнем выше текущего</a></li>
+                    <li><a href="../../index.html">Относительная ссылка на страницу 
+                        в каталоге двумя уровнями выше текущего</a></li>
+                    <li>В данном примере рассмотрим <a href="something_about_this.html">
+                        контекстную ссылку</a>, довольно распространённую 
+                        вещь при разработке сайтов</li>
+                    <li><a href="https://scfiction.com/gjeek.html#pictures">
+                        Ссылка на фрагмент страницы стороннего сайта</a></li>
+                    <map name="range">
+                        <area shape="circle" coords="420,240,200" href="cat.html" alt="..." />
+                        <area shape="rect" coords="0,0,100,100" href="notcat.html" alt="..." />
+                    </map>
+                    <li><img class="img-fluid" src="images/cat.jpg" usemap="#range" alt="very_bad.html" 
+                        style="width: 800px; height: 600px"></li>
+                    <li><a href="">Ссылка с пустым атрибутом href</a></li>
+                    <li><a>Ссылка с отсутсвующим атрибутом href</a></li>
+                    <li><a href="./about/the_thing.html" rel="nofollow">
+                        Ссылка, по которой запрещён переход поисковикам</a></li>
+                    <li><!-- noindex --><a href="example.html">Ссылка, индексирование 
+                        которой необходимо убрать</a><!-- /noindex --></li>
+                    <li><ol>
+                        <li><a href="example.html" title="Пример">
+                            Ссылка на что-то</a></li>
+                        <li><a href="dudos.html" title="Гайд по дудосу">
+                            Ссылка на гайд</a></li>
+                        <li><a href="bookshop.html" title="Подборка книг">
+                            Ссылка на подборку книг</a></li>
+                        <li><a href="bookinghotel.html" title="Бронирование номеров с 
+                            самыми низкими ценами">Ссылка на бронирование номеров</a></li>
+                        <li><a href="musify.html" title="Самая большая библиотека музыки">
+                            Ссылка на музыкальную библиотеку</a></li>
+                    </ol></li>
+                    <li><a href="ftp://username:qwerty1234@films.com/catalog/term.html">
+                        Ссылка на файл, загруженный на FTP-сервер</a></li>
+                </ul>
+
+            </div>
+
+            <section class="start-table">
+
+                <h2>Таблица</h2>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+
+                        <tr class="odd-row">
+                            <th rowspan="4">№</th>
+                            <th rowspan="4">ФИО</th>
+                            <th colspan="8">Месяцы</th>
+                            <th colspan="3">Выводы</th>
+                        </tr>
+
+                        <tr class="even-row">
+                            <th colspan="4">Зимние</th>
+                            <th colspan="4">Весенние</th>
+                            <th rowspan="3">Остаток</th>
+                            <th rowspan="3">Были ли взяты кредиты</th>
+                            <th rowspan="3">Надо ли дарить курс по 
+                                финансовой грамотности</th>
+                        </tr>
+
+                        <tr class="odd-row">
+                            <th colspan="2">Декабрь</th>
+                            <th colspan="2">Февраль</th>
+                            <th colspan="2">Март</th>
+                            <th colspan="2">Май</th>
+                        </tr>
+
+                        <tr class="even-row">
+                            <th>Доходы</th>
+                            <th>Расходы</th>
+                            <th>Доходы</th>
+                            <th>Расходы</th>
+                            <th>Доходы</th>
+                            <th>Расходы</th>
+                            <th>Доходы</th>
+                            <th>Расходы</th>
+                        </tr>
+
+                        <tr class="odd-row">
+                            <td>1</td>
+                            <td>Егорова Эмилия Денисовна</td>
+                            <td>101347</td>
+                            <td>45698</td>
+                            <td>171120</td>
+                            <td>134231</td>
+                            <td>36708</td>
+                            <td>19347</td>
+                            <td>159244</td>
+                            <td>23232</td>
+                            <td>607694</td>
+                            <td>Нет</td>
+                            <td>Нет</td>
+                        </tr>
+
+                        <tr class="even-row">
+                            <td>2</td>
+                            <td>Фролов Павел Артёмович</td>
+                            <td>38602</td>
+                            <td>34446</td>
+                            <td>108602</td>
+                            <td>25480</td>
+                            <td>114569</td>
+                            <td>118316</td>
+                            <td>165078</td>
+                            <td>156148</td>
+                            <td>313730</td>
+                            <td>Нет</td>
+                            <td>Нет</td>
+                        </tr>
+
+                        <tr class="odd-row">
+                            <td>3</td>
+                            <td>Феодосьева Ольга Тимофеевна</td>
+                            <td>126920</td>
+                            <td>104765</td>
+                            <td>94882</td>
+                            <td>118897</td>
+                            <td>79608</td>
+                            <td>32032</td>
+                            <td>73498</td>
+                            <td>129133</td>
+                            <td>2662</td>
+                            <td>Возможно</td>
+                            <td>Возможно</td>
+                        </tr>
+
+                        <tr class="even-row">
+                            <td>4</td>
+                            <td>Бондарева Виктория Дмитриевна</td>
+                            <td>72903</td>
+                            <td>23785</td>
+                            <td>11385</td>
+                            <td>126603</td>
+                            <td>67091</td>
+                            <td>150322</td>
+                            <td>154740</td>
+                            <td>41390</td>
+                            <td>-290060</td>
+                            <td>КОНЕЧНО</td>
+                            <td>ОБЯЗАТЕЛЬНО</td>
+                        </tr>
+
+                        <tr class="odd-row">
+                            <td>5</td>
+                            <td>Черных Софья Георгиевна</td>
+                            <td>120965</td>
+                            <td>52247</td>
+                            <td>163936</td>
+                            <td>68878</td>
+                            <td>67909</td>
+                            <td>132862</td>
+                            <td>138513</td>
+                            <td>1161799</td>
+                            <td>-210322</td>
+                            <td>КОНЕЧНО</td>
+                            <td>ОБЯЗАТЕЛЬНО</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </section>
+
+            <section class="start-shape">
+
+                <h2>Форма</h2>
+
+                <form class="shape" action="/" method="post">
+
+                    <p><label>
+                            ФИО:<br />
+                            <input name="field-full-name" 
+                            placeholder="Введите своё ФИО" size="30" />
+                    </label></p>
+                    
+                    <p><label>
+                            Телефон:<br />
+                            <input name="field-phone-number" 
+                            placeholder="Введите свой номер телефона" size="30" />
+                    </label></p>
+
+                    <p><label>
+                            E-mail:<br />
+                            <input name="field-email" 
+                            placeholder="Введите свой e-mail" size="30" />
+                    </label></p>
+
+                    <p><label>
+                            Дата рождения:<br />
+                            <input type="date" name="field-date" />
+                    </label></p>
+
+                    <p>
+                        Пол:<br />
+                        <label>
+                            <input type="radio" name="field-gender" value="male" />Мужской
+                        </label>
+                        <label>
+                            <input type="radio" name="field-gender" value="female" />Женский
+                        </label>
+                    </p>
+
+                    <p><label>
+                            Список любимых языков программирования:<br />
+                            <select name="field-pl-list" multiple="multiple" size="5">
+                                <option value="Python" selected="selected">Python</option>
+                                <option value="C">C</option>
+                                <option value="C++" selected="selected">C++</option>
+                                <option value="C#">C#</option>
+                                <option value="JavaScript" selected="selected">JavaScript</option>
+                                <option value="Java" selected="selected">Java</option>
+                                <option value="Pascal">Pascal</option>
+                                <option value="PHP">PHP</option>
+                            </select>
+                    </label></p>
+
+                    <p><label>
+                            Биография:<br />
+                            <textarea name="field-biography" placeholder="Расскажите о себе"></textarea>
+                    </label></p>
+
+                    <p><label>
+                            <input type="checkbox" name="field-check">С контрактом ознакомлен(а)
+                    </label></p>
+
+                    <p><input type="submit" value="Сохранить"></p>
+                    
+                </form>
+
+            </section>
+            
+        </main>
+
+        <footer>
+            (c) Петров Семён, 2023
+        </footer>
+
+    </body>
+    
+</html>

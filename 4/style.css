@@ -3,17 +3,29 @@ body{
 }
 
 header{
-    padding: 0px;
+    /* padding: 0px; */
     background-color: palegreen;
+}
+
+.navbar{
+    padding-bottom: 0;
+}
+
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
 }
 
 #logotype{
     max-width: 140px;
     min-width: 100px;
     height: 100px;
+    margin: 5px;
 }
 
 .navigation{
+    /* width: 100%; */
+    margin: 0;
     background-color: lightsalmon;
 }
 

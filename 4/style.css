@@ -3,17 +3,19 @@ body{
 }
 
 header{
-    /* padding: 0px; */
     background-color: palegreen;
 }
 
 .navbar{
+    padding-top: 0;
     padding-bottom: 0;
 }
 
 .container-fluid{
+    flex-wrap: wrap;
     padding-right: 0;
     padding-left: 0;
+    max-width: 100%;
 }
 
 #logotype{
@@ -24,7 +26,6 @@ header{
 }
 
 .navigation{
-    /* width: 100%; */
     margin: 0;
     background-color: lightsalmon;
 }
@@ -34,8 +35,30 @@ header{
     color: indigo;
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .nav-link{
+        font-size: 100%;
+    }
+
+    .name{
+        font-size: 140%;
+    }
+
+}
+
+.content.row{
+    width: 100%;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+}
+
 .container{
-    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 1500px;
 }
 
 .start-list,
@@ -43,18 +66,30 @@ header{
 .start-shape{
     width: 100%;
     background-color: ivory;
-    margin: 0 auto;
+    margin: 0;
     margin-top: 5%;
 }
 
-.odd-row{
-    background-color: khaki;
-}
+@media (min-width: 576px) {
 
-.even-row{
-    background-color: plum;
+    .start-list,
+    .start-table,
+    .start-shape{
+        padding: 30px;
+    }
+
+    .start-list,
+    .start-shape{
+        border-radius: 60px;
+    }
+
+    .start-table{
+        border-radius: 20px;
+    }
+
 }
 
 footer{
+    margin-top: 5%;
     background-color: aqua;
 }

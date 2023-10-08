@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images/icon.png">
+        <title>Задание 5</title>
+    </head>
+
+    <body>
+        
+        <header>
+            <img class="logo" src="images/logo.png" alt="Логотип" />
+        </header>
+
+        <form id="main-form">
+            
+            <p><label for="product_select">Выберите желаемый товар:</label>
+            <select name="products" id="product_select">
+                <option value="">Список товаров</option>
+                <option value="playstation-5">PlayStation 5</option>
+                <option value="xbox-360">XBox 360</option>
+                <option value="iphone-15">IPhone 15</option>
+                <option value="macbook-pro-16">MacBook Pro 16</option>
+                <option value="tesla">Tesla Model X</option>
+                <option value="geforce-rtx-4090">GeForce RTX 4090</option>
+                <option value="rock">Камень</option>
+            </select></p>
+
+            <p><label for="product_count">Укажите количество товаров:</label>
+            <input type="text" name="count" id="product_count" /></p>
+            
+            <span class="error"></span><br />
+            <button name="send_button">Подсчёт стоимости</button>
+
+            <p class="final_price"></p>
+
+        </form>
+
+        <script src="main.js"></script>
+
+    </body>
+
+</html>

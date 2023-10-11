@@ -54,6 +54,7 @@ function checkForm(event) {
       break;
     }
     total_price = parseInt(count) * price;
+    total_price = String(total_price).replace(/(\d)(?=(\d{3})+$)/mg, '$1 ');
     total_message = "Итоговая цена: " + total_price + " $";
     document.getElementsByClassName("final_price")[0].innerHTML = total_message;
   }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images/icon.png" />
+        <script defer src="main.js"></script>
+        <script defer src="add.js"></script>
+        <title>Задание 6</title>
+    </head>
+
+    <body>
+        
+        <header class="header">
+            <img class="logo" src="images/logo.png" alt="Логотип" />
+            <h1 class="title">Задание 6</h1>
+        </header>
+
+        <form id="main-form">
+            
+            <p><label class="text" for="product_select">Выберите желаемый товар:</label>
+            <select class="text" name="products" id="product_select">
+                <option value="">Список товаров</option>
+                <option value="playstation-5">PlayStation 5</option>
+                <option value="xbox-360">XBox 360</option>
+                <option value="iphone-15">IPhone 15</option>
+                <option value="macbook-pro-16">MacBook Pro 16</option>
+                <option value="tesla">Tesla Model X</option>
+                <option value="geforce-rtx-4090">GeForce RTX 4090</option>
+                <option value="stone">Камень</option>
+            </select></p>
+
+            <p><label class="text" for="product_count">Укажите количество товаров:</label>
+            <input class="text" type="text" name="count" id="product_count" /></p>
+            
+            <span class="error text"></span><br />
+            <button class="button" name="send_button">Подсчёт стоимости</button>
+
+            <p class="final_price text"></p>
+
+        </form>
+
+        <form id="additional-form">
+
+            <p><label><input type="radio" name="choosing-service" value="phone-maintenance">Обслуживание телефона</label></p>
+            <!-- чекбоксы: установка защитного стекла, замена процессора, покупка чехла, очистка динамиков, замена дисплея -->
+            <p><label><input type="radio" name="choosing-service" value="laptop-maintenance">Обслуживание ноутбука</label></p>
+            <!-- селекты: обновление термопасты, замена батареи, очистка от пыли, проверка функциональности, замена процессора -->
+            <p><label><input type="radio" name="choosing-service" value="buy-game">Покупка игры</label></p>
+            <!-- без селекта и чекбокса -->
+            <p><label><input type="radio" name="choosing-service" value="vehicle-inspection">Техосмотр машины</label></p>
+            <!-- без селекта и чекбокса -->
+            <p><label><input type="radio" name="choosing-service" value="overclocking-video-card">Разгон видеокарты</label></p>
+            <!-- селекты: минимум, нормально так (в допустимых пределах), максимально (даже если через день сгорит) -->
+            <p><label><input type="radio" name="choosing-service" value="stone-care">Уход за камнем</label></p>
+            <!-- чекбоксы: полировка, нежное мытьё, создание уникального рисунока, подарить мастеру (беспалтно) -->
+
+            <!-- <p><label class="text" for="product_select">Выберите желаемый товар:</label>
+            <select class="text" name="products" id="product_select">
+                <option value="">Список товаров</option>
+                <option value="playstation-5">PlayStation 5</option>
+                <option value="xbox-360">XBox 360</option>
+                <option value="iphone-15">IPhone 15</option>
+                <option value="macbook-pro-16">MacBook Pro 16</option>
+                <option value="tesla">Tesla Model X</option>
+                <option value="geforce-rtx-4090">GeForce RTX 4090</option>
+                <option value="rock">Камень</option>
+            </select></p>
+
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" /> -->
+
+            <p><label class="text" for="product_count">Укажите количество товаров:</label>
+            <input class="text" type="text" name="count" id="product_count" /></p>
+
+            <button class="button" name="send_button">Подсчёт стоимости</button>
+
+        </form>
+
+        <footer class="footer">
+            <div class="footer-content">
+                (c) Петров Семён, 2023
+            </div>
+        </footer>
+
+    </body>
+
+</html>

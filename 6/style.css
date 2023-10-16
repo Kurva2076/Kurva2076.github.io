@@ -29,8 +29,7 @@ body{
     margin: 15px;
 }
 
-#main-form,
-#additional-form{
+#main-form{
     width: 80%;
     max-width: 900px;
     margin: 5% auto;

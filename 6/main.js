@@ -2,60 +2,67 @@ var window = window;
 var document = document;
 
 window.addEventListener("DOMContentLoaded", function () {
-  document.getElementsByName("send_button")[0].addEventListener(
-    "click",
-    checkForm
-  );
+  var radios = document.getElementsByName("choosing-service");
+  for (i = 0; i < radios.length; i++) {
+    radios[i].addEventListener("change", changeForm);
+  }
 });
 
-function checkForm(event) {
-  var price;
-  var total_price;
-  var total_message;
-  event.preventDefault();
-  const form = document.getElementById("main-form");
-  const product = form.product_select.value;
-  const count = form.product_count.value;
-  if (product.match(/^$/) && count.match(/^\s*$/)) {
-    document.getElementsByClassName("error")[0].innerHTML =
-    "Заполните все поля";
-  } else if (product.match(/^$/)) {
-    document.getElementsByClassName("error")[0].innerHTML =
-    "Товар не выбран";
-  } else if (count.match(/^\s*$/)) {
-    document.getElementsByClassName("error")[0].innerHTML =
-    "Количество товара не введено";
-  } else if (count.match(/[^0-9]/)) {
-    document.getElementsByClassName("error")[0].innerHTML =
-    "Количество товара введено некорректно";
-  } else {
-    document.getElementsByClassName("error")[0].innerHTML = "";
-    switch (product) {
-    case "playstation-5":
-      price = 62857;
-      break;
-    case "xbox-360":
-      price = 52372;
-      break;
-    case "iphone-15":
-      price = 97365;
-      break;
-    case "macbook-pro-16":
-      price = 402648;
-      break;
-    case "tesla-model-x":
-      price = 14490000;
-      break;
-    case "geforce-rtx-4090":
-      price = 191156;
-      break;
-    case "stone":
-      price = 1837362834;
-      break;
+var servicesInfo = {
+  phoneMaintenance : {
+    price : 3200,
+    features : {
+      installationOfProtectiveGlass : 800,
+      replacingTheProcessor : 1700,
+      buyingACover : 400,
+      cleaningTheSpeakers : 250,
+      replacingTheDisplay : 2300
     }
-    total_price = parseInt(count) * price;
-    total_price = String(total_price).replace(/(\d)(?=(\d{3})+$)/mg, '$1 ');
-    total_message = "Итоговая цена: " + total_price + " $";
-    document.getElementsByClassName("final_price")[0].innerHTML = total_message;
+  },
+  laptopMaintenance : {
+    price : 5800,
+    options : {
+      thermalPasteUpdate : 1900,
+      batteryReplacement : 3500,
+      cleaningFromDust : 3000,
+      checkingFunctionality : 2700,
+      replacingTheProcessor : 4100
+    }
+  },
+  buyGame : {
+    price : 4700
+  },
+  vehicleInspection : {
+    price : 67500
+  },
+  overclockingVideoCard : {
+    price : 7900,
+    options : {
+      minimum : 100,
+      medium : 500,
+      maximum : 1000
+    }
+  },
+  stoneCare : {
+    price : 1234567890,
+    features : {
+      polishing : 1237890,
+      gentleWashing : 4561230,
+      creatingAUniqueDrawing : 987321,
+      giveToTheMaster : 0
+    }
   }
+};
+
+// console.log(servicesInfo);
+// for (var i in servicesInfo) {
+
+//   console.log(i)
+//   console.log(servicesInfo[i]);
+
+// }
+
+function changeForm(event) {
+  var optionAndFeatures = document.getElementById("optionAndFeatures");
+  
 }

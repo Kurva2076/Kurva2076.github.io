@@ -1,13 +1,14 @@
 html,
 body {
     height: 100%;
+    margin: 0;
 }
 
 body {
     background-color: lavender;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    /* flex-direction: column; */
 }
 
 .header {
@@ -24,7 +25,7 @@ body {
     padding: 5px;
     width: 17%;
     max-width: 300px;
-    min-width: 200px;
+    min-width: 150px;
     height: 150px;
 }
 
@@ -36,8 +37,29 @@ body {
     margin: 15px;
 }
 
+@media (max-width: 440px) {
+    .title {
+        width: 145px;
+        font-size: 200%;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 335px) {
+    .title {
+        width: 125px;
+        font-size: 175%;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 45px;
+}
+
 .slick-list {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .slick-track {
@@ -53,13 +75,118 @@ body {
     justify-content: center;
 }
 
+.slider {
+    min-width: 0;
+    position: relative;
+    grid-row: 1 / 3;
+}
+
+.slick-list {
+    margin-top: 10rem;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 19rem;
+    z-index: 10;
+    font-size: 0;
+    border-style: none;
+    width: 75px;
+    height: 100px;
+}
+
+@media (max-height: 950px) {
+
+    .slick-list {
+        margin-top: 7rem;
+    }
+
+    .slider .slick-arrow {
+        top: 16rem;
+    }
+
+}
+
+@media (max-height: 850px) {
+
+    .slick-list {
+        margin-top: 6rem;
+    }
+
+    .slider .slick-arrow {
+        top: 15rem;
+    }
+
+}
+
+@media (max-height: 800px) {
+
+    .slick-list {
+        margin-top: 4rem;
+    }
+
+    .slider .slick-arrow {
+        top: 13rem;
+    }
+
+}
+
+@media (max-height: 750px) {
+
+    .slick-list {
+        margin-top: 3rem;
+    }
+
+    .slider .slick-arrow {
+        top: 12rem;
+    }
+
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("./images/arrow-prev.png") 0 0 / 100% no-repeat;
+    opacity: 0.5;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("./images/arrow-next.png") 0 0 / 100% no-repeat;
+    opacity: 0.5;
+}
+
+.slider .slick-dots {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0 1%;
+}
+
+.slider .slick-dots button{
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: SpringGreen;
+    border-style: none;
+}
+
+.slider .slick-active button {
+    background-color: LimeGreen;
+}
+
 .image {
     width: 90%;
     height: 400px;
 }
 
-/* сделать sticky footer */
 .footer {
+    grid-row: 3 / 4;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     background-color: violet;

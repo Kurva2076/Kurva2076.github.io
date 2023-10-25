@@ -1,16 +1,21 @@
+/*jslint browser: true*/ /*global  $*/
+
 $(document).ready(function () {
   $(".slider").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 770,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+      arrows: true,
+      dots: true,
+      infinite: true,
+      responsive: [
+          {
+              breakpoint: 770,
+              settings: {
+                  slidesToScroll: 1,
+                  slidesToShow: 1
+              }
+          }
+      ],
+      slidesToScroll: 1,
+      slidesToShow: 3
   });
-})
+});
+

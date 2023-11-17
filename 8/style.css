@@ -35,12 +35,13 @@ body {
     float: right;
     padding: 20px;
     margin: 15px;
+    font-family: Arial;
 }
 
 @media (max-width: 440px) {
     .title {
         width: 145px;
-        font-size: 200%;
+        font-size: 180%;
         padding: 5px;
         margin: 5px;
     }
@@ -49,7 +50,7 @@ body {
 @media (max-width: 335px) {
     .title {
         width: 125px;
-        font-size: 175%;
+        font-size: 155%;
     }
 }
 
@@ -73,46 +74,6 @@ body {
     max-width: 10vmax;
     min-width: 150px;
 }
-
-/* @media (max-width: 1495px) {
-    .openPopup {
-        margin: 20vh 38vw;
-        max-width: 15vmax;
-        min-width: 15vmin;
-    }
-}
-
-@media (max-width: 1425px) {
-    .openPopup {
-        margin: 20vh 35vw;
-        max-width: 15vmax;
-        min-width: 15vmin;
-    }
-}
-
-@media (max-width: 768px) {
-    .openPopup {
-        margin: 20vh 40vw;
-        max-width: 15vmax;
-        min-width: 15vmin;
-    }
-}
-
-@media (max-width: 425px) {
-    .openPopup {
-        margin: 15vh 35vw;
-        max-width: 20vmax;
-        min-width: 25vmin;
-    }
-} */
-
-/* @media (max-width: 375px) {
-    .openPopup {
-        margin: 15vh 35vw;
-        max-width: 20vmax;
-        min-width: 25vmin;
-    }
-} */
 
 .popup {
     display: none;

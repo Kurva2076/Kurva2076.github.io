@@ -58,12 +58,36 @@ body {
     grid-template-rows: 1fr;
 }
 
+.button {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
 .openPopup {
+    grid-column: 6 / 8;
+    grid-row: 2 / 3;
     width: 200px;
     height: 100px;
-    margin: 20vh 45vw;
     max-width: 10vmax;
     min-width: 150px;
+}
+
+/* @media (max-width: 1495px) {
+    .openPopup {
+        margin: 20vh 38vw;
+        max-width: 15vmax;
+        min-width: 15vmin;
+    }
+}
+
+@media (max-width: 1425px) {
+    .openPopup {
+        margin: 20vh 35vw;
+        max-width: 15vmax;
+        min-width: 15vmin;
+    }
 }
 
 @media (max-width: 768px) {
@@ -80,7 +104,7 @@ body {
         max-width: 20vmax;
         min-width: 25vmin;
     }
-}
+} */
 
 /* @media (max-width: 375px) {
     .openPopup {
@@ -92,6 +116,13 @@ body {
 
 .popup {
     display: none;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    background: whitesmoke;
+    width: 500px;
+    height: 375px;
+    padding: 10px;
 }
 
 .image {

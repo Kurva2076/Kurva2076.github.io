@@ -86,9 +86,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: whitesmoke;
-    width: 250px;
+    width: auto;
     height: auto;
-    padding: 12px;
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -98,6 +98,11 @@ body {
     border-color: cyan;
     margin-left: 225px;
     border-radius: 20px;
+}
+
+.form-text {
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size: 15px;
 }
 
 .service-message {

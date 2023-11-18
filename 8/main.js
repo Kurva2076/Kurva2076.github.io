@@ -2,7 +2,6 @@ const win = window;
 const doc = document;
 const his = history;
 const con = console;
-const Slap = new Slapform();
 const serMsg = doc.getElementsByClassName("service-message")[0];
 const popup = doc.getElementsByClassName("popup")[0];
 const infForUsr = doc.getElementsByClassName("infoForUser")[0];
@@ -91,7 +90,7 @@ function submitForm() {
         organization: doc.getElementsByName("organization")[0].value,
         phoneNumber: doc.getElementsByName("phoneNumber")[0].value
     };
-    var slapform = Slap;
+    var slapform = new Slapform();
     slapform.submit({
         data: formData,
         form: "6iAdlxl4o9"

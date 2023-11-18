@@ -87,7 +87,7 @@ body {
     transform: translate(-50%, -50%);
     background: whitesmoke;
     width: 250px;
-    height: 415px;
+    height: auto;
     padding: 12px;
     border-radius: 10px;
 }

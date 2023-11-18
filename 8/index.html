@@ -7,44 +7,97 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="images/icon.png" />
+        <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
         <script defer src="main.js"></script>
-        <title>Задание 6</title>
+        <title>Задание 8</title>
     </head>
 
     <body>
         
         <header class="header">
             <img class="logo" src="images/logo.png" alt="Логотип" />
-            <h1 class="title">Задание 6</h1>
+            <h1 class="title">Задание 8</h1>
         </header>
 
         <div class="content">
-            <form id="main-form">
+            <button class="openPopup" type="button" rel="popup">
+                <p class="button-text">Открыть popup</p>
+            </button>
 
-                <div class="services">
-                    <p><label class="text"><input type="radio" name="choosing-service" value="buyGame">Покупка игры</label></p>
-                    <p><label class="text"><input type="radio" name="choosing-service" value="laptopMaintenance">Обслуживание ноутбука</label></p>
-                    <p><label class="text"><input type="radio" name="choosing-service" value="overclockingVideoCard">Разгон видеокарты</label></p>
-                    <p><label class="text"><input type="radio" name="choosing-service" value="phoneMaintenance">Обслуживание телефона</label></p>
-                    <p><label class="text"><input type="radio" name="choosing-service" value="stoneCare">Уход за камнем</label></p>
-                    <p><label class="text"><input type="radio" name="choosing-service" value="vehicleInspection">Техосмотр машины</label></p>
+            <div class="popup">
+                <button class="closePopup" type="button">&times;</button>
+                <div class="popupContainer">
+                    <form>
+                        <div class="textElement">
+                            <div class="requiredFormElement">
+                                <p><label>
+                                    <div class="form-text">* ФИО:</div>
+                                    <input name="fullName" 
+                                    placeholder="Введите ФИО" size="30" />
+                                </label></p>
+                            </div>
+                        </div>
+                        
+                        <div class="textElement">
+                            <div class="requiredFormElement">
+                                <p><label>
+                                    <div class="form-text">* Телефон:</div>
+                                    <input name="phoneNumber" 
+                                    placeholder="Введите номер телефона" size="30" />
+                                </label></p>
+                            </div>
+                        </div>
+
+                        <div class="textElement">
+                            <div class="requiredFormElement">
+                                <p><label>
+                                    <div class="form-text">* E-mail:</div>
+                                    <input name="email" 
+                                    placeholder="Введите e-mail" size="30" />
+                                </label></p>
+                            </div>
+                        </div>
+
+                        <div class="textElement">
+                            <div class="requiredFormElement">
+                                <p><label>
+                                    <div class="form-text">* Организация:</div>
+                                    <input name="organization" 
+                                    placeholder="Введите наименование организации" size="30" />
+                                </label></p>
+                            </div>
+                        </div>
+
+                        <div class="textElement">
+                            <div class="optionalFormElement">
+                                <p><label>
+                                    <div class="form-text">Сообщение:</div>
+                                    <textarea class="textarea" name="message" placeholder=""></textarea>
+                                </label></p>
+                            </div>
+                        </div>
+
+                        <div class="checkFormElement">
+                            <p><label>
+                                <input type="checkbox" name="check" />
+                                <b class="form-text">Я согласен(на) с политикой <br /> обработки персональных данных</b>
+                            </label></p>
+                        </div>
+
+                        <p><input class="sendButton" type="submit" value="Отправить"></p>
+                        <i class="form-text"><p class="service-message"></p></i>
+                    </form>
                 </div>
-
-                <div id="optionAndFeatures"></div>
-
-                <p><label class="text" for="product_count">Укажите количество услуг:</label>
-                <input class="text" type="text" name="count" id="product_count" /></p>
-
-                <p class="final_price text"></p>
-
-            </form>
+            </div>
         </div>
 
-        <footer class="footer">
-            <div class="footer-content">
-                (c) Петров Семён, 2023
-            </div>
-        </footer>
+        <div class="footer">
+            <footer>
+                <div class="footer-content">
+                    (c) Петров Семён, 2023
+                </div>
+            </footer>
+        </div>
 
     </body>
 

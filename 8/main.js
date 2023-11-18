@@ -93,7 +93,7 @@ function submitForm() {
     var slapform = new Slapform();
     slapform.submit({
         data: formData,
-        form: "6iAdlxl4o9"
+        form: "JyQHnUCei"
     }).then(function (response) {
         con.log("Success", response);
         win.alert("Форма была успешно отправлена на сервер");

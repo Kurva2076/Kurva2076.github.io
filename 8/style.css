@@ -106,7 +106,9 @@ body {
 }
 
 .service-message {
+    display: none;
     font-size: small;
+    color: red;
 }
 
 .textarea {

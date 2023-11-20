@@ -145,7 +145,9 @@ function insertLastInformation() {
         } else {
             element = elements[i].getElementsByTagName("textarea")[0];
         }
-        element.value = localStorage.getItem(element.name);
+        if (localStorage.getItem(element.name) !== null) {
+            element.value = localStorage.getItem(element.name);
+        }
     }
     localStorage.clear();
 }
